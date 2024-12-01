@@ -87,6 +87,8 @@ p {
 
 body {
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 h1, h2 {
     color: white;
@@ -100,6 +102,7 @@ span.b1 {
 .sticky {
     position: sticky;
     top: 0;
+    z-index: 1000;
     background-color: black;
 }
 .title {
@@ -125,11 +128,13 @@ ol {
 .timeline-container {
     width: 800px;
     padding: 20px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .timeline {
     position: relative;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .timeline::before {
@@ -156,10 +161,12 @@ ol {
     position: relative;
     width: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 .timeline-item:nth-child(odd) .content {
     left: 0;
+    transform: translate(10%);
 }
 
 .timeline-item:nth-child(even) .content {
