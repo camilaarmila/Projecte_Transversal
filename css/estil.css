@@ -122,3 +122,68 @@ ol {
     color: white;
     list-style-type: upper-roman;
 }
+.timeline-container {
+    width: 800px;
+    padding: 20px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #daa520;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item .content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    position: relative;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(odd) .content {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) .content {
+    left: 17%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #daa520;
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+
+h1 {
+        text-align: center;
+        font-family: georgia;
+        color: #ddd;
+}
+.estil1 {
+    color: #000;
+}
