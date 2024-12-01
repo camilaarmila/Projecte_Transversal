@@ -8,7 +8,7 @@
     <title>Els diners</title>
 
 </head>
-<body>
+<body class="fons">
     <div class="sticky">
         <header>
                 <div class="header-content">
@@ -23,7 +23,7 @@
                             <li><a href="./Característiques.html">Característiques</a></li>
                             <li><a href="./Països.html">Països</a></li>
                             <li><a href="./Tips.html">Tips</a></li>
-                            <li><a href="#contacte">Contacte</a></li>
+                            <li><a href="./Formulari.html">Opinions</a></li>
                         </ul>
                     </nav>
                     <div class="search-bar">
@@ -34,3 +34,122 @@
         </header>
         <hr>
     </div>
+    <h1 class="titleFormulari">Què en penses?</h1>
+    <form action="que_en_penses_enviat.html" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="edat">Edat:</label>
+        <input type="number" id="edat" name="edat" required>
+
+        <label for="opinio">D'on ets?</label>
+        <select id="opinio" name="opinio" required>
+            <option></option>
+            <option value="Alemania">Alemania</option>
+            <option value="Angola">Angola</option>
+            <option value="Arabia Saudita">Arabia Saudita</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Australia">Australia</option>
+            <option value="Albania">Albania</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Argelia">Argelia</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Bélgica">Bélgica</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Burkina Faso">Burkina Faso</option>
+            <option value="Barbados">Barbados</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Burundi">Burundi</option>
+            <option value="Canadá">Canadá</option>
+            <option value="Camerún">Camerún</option>
+            <option value="China">China</option>
+            <option value="Chile">Chile</option>
+            <option value="Corea del Sur">Corea del Sur</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Corea del Norte">Corea del Norte</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Croacia">Croacia</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Dinamarca">Dinamarca</option>
+            <option value="Dominica">Dominica</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="España">España</option>
+            <option value="Egipto">Egipto</option>
+            <option value="El Salvador">El Salvador</option>
+            <option value="Eslovaquia">Eslovaquia</option>
+            <option value="Francia">Francia</option>
+            <option value="Filipinas">Filipinas</option>
+            <option value="Guinea">Guinea</option>
+            <option value="Grecia">Grecia</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="Haití">Haití</option>
+            <option value="Honduras">Honduras</option>
+            <option value="Hungría">Hungría</option>
+            <option value="India">India</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Italia">Italia</option>
+            <option value="Islandia">Islandia</option>
+            <option value="Japón">Japón</option>
+            <option value="México">México</option>
+            <option value="Malta">Malta</option>
+            <option value="Malasia">Malasia</option>
+            <option value="Mónaco">Mónaco</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Panamá">Panamá</option>
+            <option value="Perú">Perú</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Reino Unido">Reino Unido</option>
+            <option value="Rusia">Rusia</option>
+            <option value="República del Congo">República del Congo</option>
+            <option value="República Dominicana">República Dominicana</option>
+            <option value="Sudáfrica">Sudáfrica</option>
+            <option value="Sudáfrica">Suiza</option>
+            <option value="Sudáfrica">Suecia</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Tailandia">Tailandia</option>
+            <option value="Turquía">Turquía</option>
+            <option value="Túnez">Túnez</option>
+            <option value="Tuvalu">Tuvalu</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Ucrania">Ucrania</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Yemen">Yemen</option>
+            <option value="Zimbabue">Zimbabue</option>
+           
+
+        </select>
+        
+        <label class="preguntes">Quina Moneda utilitzes?</label>
+        <label><input type="checkbox" name="moneda" value="opcio1" checked> Euro € </label>
+        <label><input type="checkbox" name="moneda" value="opcio2"> Dolar $</label>
+        <label><input type="checkbox" name="moneda" value="opcio3"> Peso $</label>
+        <label><input type="checkbox" name="moneda" value="opcio3"> libra £</label>
+        <label><input type="checkbox" name="moneda" value="opcio3"> Altres</label>
+
+        <br><br>
+        <label class="preguntes">Que tal et va semblar la pàgina?</label>
+        <label><input type="radio" name="evalue" value="masculí" checked> Molt Horrible</label>
+        <label><input type="radio" name="evalue" value="femení"> Malament</label>
+        <label><input type="radio" name="evalue" value="altre"> Normal</label>
+        <label><input type="radio" name="evalue" value="altre"> Bé</label>
+        <label><input type="radio" name="evalue" value="altre"> Interessant</label>
+        <label><input type="radio" name="evalue" value="altre"> Increïble, fabulosa i única</label>
+
+        <br><br>
+        <label for="comentari" class="preguntes">Dóna'ns un tips per facturar✨:</label>
+        <br>
+        <textarea id="comentari" name="comentari" placeholder="Escriu aquí els teus comentaris..." required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <br><br>
+    <footer>
+        <p class="peu">© Paolo Marín&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Danna Quintero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Camila Arebalo</p>
+    </footer>
+</body>
+</html>
