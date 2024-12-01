@@ -230,3 +230,15 @@ color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
+.diners {
+    color: #ddd;
+    margin-left: 27%;
+    margin-right: 27%;
+}
+.text {
+    color: #ddd;
+    margin-left: 27%;
+    margin-right: 27%;
+    text-align: justify;
+
+}
